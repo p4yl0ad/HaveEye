@@ -3,4 +3,4 @@ HaveEye is a lightweight python script to interface with a public Breach detecti
 
 <h4>TODO</h4>
 <li>-Add the ability to have the report sent to said email</li>
--Integreation with .bashrc so you get one check per system restart (Greets you on terminal with a report :) )
+-Integreation with .bashrc so you get one check per system restart (Greets you on terminal with a report :) )</li>
