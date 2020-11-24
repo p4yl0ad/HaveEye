@@ -8,7 +8,7 @@ from pwn import *
 topost = "https://dynarisk.com"
 apiend = "/api/v1/scan/email"
 
-token = "ICtqFI03Ne384S7LaN9XtuxiAqrwOZYeUiwNiiN1"
+token = "ICtqFI03Ne384S7LaN9XtuxiAqrwOZYeUiwNiiN1" #PUBLICALLY AVAILABLE API TOKEN TAKEN FROM BURP REQUEST
 email = input("Input your email pls > ")
 
 data = { '_token': token,
@@ -17,9 +17,10 @@ r =  requests.post(url = topost + apiend, data = data)
 output = r.text
 #print(output)
 if '"breach_contains":0' in output:
-    log.success("Congrats You're Safe")
+    log.success("Congrats You're Safe brochacha, keep it up :O ")
 else:
-    log.failure("You're Compromised Chief")
+    log.failure("You're Compromised Chief, id suggest a password change bossman ")
 
 #TODO
 #add option to send report to email :)
+#add multiple api source access // dn checks ;)
